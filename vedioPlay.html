@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniYoutube App</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <style>
+        #frame {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            margin: 50px 0px 10px 100px;
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(5, 5, 134);
+        }
+    </style>
+
+<body onload="videoPlay()">
+    <h2>Your Searched Video</h2>
+    <div id="frame">
+        <iframe id="play_video" width="300" height="315" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <hr>
+
+   <div id="container">
+
+   </div>
+
+
+</body>
+
+</html>
+<script src="./script/videoPlay.js"></script>

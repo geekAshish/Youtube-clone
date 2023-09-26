@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+#logo > a > img{
+    width: 10em;
+}
+
+#search{
+ display: flex;
+ flex-direction: column;
+
+ /* justify-content: center;
+ align-items: center; */
+ /* margin-right: 90px; */
+}
+
+#search > input {
+    border: 2px solid rgb(218, 212, 212);
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#search > i{
+    border: 2px solid rgb(249, 244, 244);
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color:  rgb(255, 245, 245);
+    cursor: pointer;
+   }
+#search > button{
+    padding: 15px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+}
+#container{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 15px;
+ margin-top: 50px;
+}
+/* .video > img{
+    height: 200px;
+} */
+.video > img:hover{
+    height: 203px;
+    cursor: pointer;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(5, 5, 134);
+}
+h2+p{
+    font-size: 25px;
+    color:  rgb(85, 80, 80);
+}
+p+button{
+    padding: 7px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-badge {
+    margin: 1em 0 0 1em;
+}
+
+@media (max-width: 650px) {
+    #container{
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1em;
+        margin-top: 50px;
+    }
+    .video {
+        padding: .5em;
+    }
+}
+@media  (min-width: 600px) {
+    #container{
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+        margin-top: 50px;
+    }
+    .video {
+        padding: .5em;
+    }
+}
+
+@media (min-width: 800px) {
+    #search{
+        display: flex;
+        flex-direction: row;
+    }
+    #search > button{
+        margin: 0 1em;
+        padding: 0 5em;
+        border-radius: 10px;
+        border: none;
+        /* margin-left: 20px; */
+        cursor: pointer;
+    }
+}
+
+@media  (min-width: 1000px) {
+    #container{
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1em;
+        margin-top: 50px;
+    }
+    .video {
+        padding: .5em;
+    }
+}
